@@ -14,4 +14,3 @@ void ftpserve_get_file(int sock_data, int sock_control, char* filename);
 int ftpserve_put_file(int sock_data, int sock_control);
 
 #endif
-

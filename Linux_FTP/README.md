@@ -5,38 +5,38 @@ Simple implementation of a file transfer program. It includes custom client and 
 ### Directory layout:
 	Linux_FTP/
 		client/
-			ftclient.c
-			ftclient.h
+			ftpclient.cpp
+			ftpclient.h
 			makefile
 		common/
-			common.c
+			common.cpp
 			common.h
-		server/
-			ftserve.c
-			ftserve.h
+		serve/
+			ftpserve.cpp
+			ftpserve.h
 			makefile
 
 ###Usage
-To compile and link ftserve:
+To compile and link ftpserve:
 ```
-	$ cd server/
+	$ cd serve/
 	$ make
 ```
 
-To compile and link ftclient:
+To compile and link ftpclient:
 ```
 	$ cd client/
 	$ make
 ```
 
-To run ftserve:
+To run ftpserve:
 ```
-	$ server/ ./ftpserve
+	$ serve/ ./ftpserve
 ```
 
-To run ftclient:
+To run ftpclient:
 ```
-	$ client/ ./ftpserve servr_IP
+	$ client/ ./ftpclient servr_IP
 
 	Commands:
 		list
